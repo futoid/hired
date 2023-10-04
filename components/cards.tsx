@@ -6,7 +6,6 @@ interface CardProps {
 }
 
 const Cards : React.FC<CardProps> = async({prop}) => {
-    console.log(prop);
     return (
         <>
             
