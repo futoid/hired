@@ -3,13 +3,16 @@ import cred from "@/companies/cred";
 
 const data = async () => {
     try{
-        const respose : object[][] = [];
+        const respose : Array<Object> = [];
         const zohoData  = await zoho();
         const credData = await cred();
 
-        if(zohoData !== undefined)respose.push(zohoData);
-        if(credData !== undefined)respose.push(credData);
-        
+        if(zohoData !== undefined){
+            zohoData.map((ele) => respose.push(ele));
+        }
+        if(credData !== undefined){
+            credData.map((ele) => respose.push(ele));
+        }
         return respose;
     }
     catch(error){

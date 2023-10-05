@@ -1,14 +1,20 @@
 import Card from "./card";
 import data from "@/libs/data";
 
-interface CardProps {
-    prop : Object
+interface Details {
+    company: string
+    location?: string
+    role: string
+    experience?: string
+    jobType?: string
+    link: string
 }
 
-const Cards : React.FC<CardProps> = async({prop}) => {
+const Cards = async() => {
+    const openings = await data();
     return (
         <>
-            
+            {openings && openings.map((ele : any) => <Card company={ele.company} location={ele?.location} role={ele.title} jobType={ele.type} link={ele.link}/>)}
         </>
     )
 }
