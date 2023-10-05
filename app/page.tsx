@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <main>
       <Header />
-      <div className={`px-6 pt-10`}>
+      <div className={`px-6 pt-10 lg:px-20`}>
         <Results />
       </div>
       <Footer />

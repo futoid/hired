@@ -22,7 +22,7 @@ const Card: React.FC<CardProp> = (
         <div className=" p-5 bg-[#21F591] bg-opacity-[6%] my-4">
             <div className=" flex justify-between">
                 <div className=" flex gap-2 items-center">
-                    <h1 className=" font-bold text-[#378E18] text-base">{company}</h1>
+                    <h1 className=" font-bold text-[#15713b] text-base">{company}</h1>
                     {location &&
                         <div className=" flex items-center">
                             <MdLocationOn size={20} color="#292929" />
