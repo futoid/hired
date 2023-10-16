@@ -19,7 +19,7 @@ const Card: React.FC<CardProp> = (
     }
 ) => {
     return (
-        <div className=" p-5 bg-[#21F591] bg-opacity-[6%] my-4">
+        <div className=" my-10 p-6 lg:my-0 bg-[#21F591] bg-opacity-[6%] shadow-lg rounded-lg">
             <div className=" flex justify-between">
                 <div className=" flex gap-2 items-center">
                     <h1 className=" font-bold text-[#15713b] text-base">{company}</h1>

@@ -10,7 +10,7 @@ interface Details {
 }
 
 const cred  = async() => {
-    const url = "https://api.lever.co/v0/postings/cred?mode=json&department=engineering";
+    const url = "https://api.lever.co/v0/postings/cred?mode=json&department=frontend%20engineering&department=backend%20engineering&department=data%20science&department=security%20%26%20enterprise%20it";
     try{
         const res = await axios.get(url);
         const data = res.data;
@@ -22,7 +22,7 @@ const cred  = async() => {
                 "company" : "Cred",
                 "title" : ele.text,
                 "type" : ele.categories.commitment,
-                "location" : ele.categories.location,
+                "location" : ele.country,
                 "link" : ele.applyUrl
             }
             response.push(obj);

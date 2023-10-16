@@ -1,7 +1,8 @@
 const Search = () => {
     return (
         <div>
-            <div className="hidden pt-20 md:block md:flex w-full items-center justify-center gap-10">
+            <div className="hidden pt-20 
+            md:flex w-full items-center justify-center gap-10">
                 <div className="w-full">
                     <input type="text" name="Hello" placeholder="Job Title" className="p-4 bg-[#E4F1F1] text-2xl w-full outline-none transition focus:shadow-2xl focus:shadow-green-100 rounded-lg" />
                 </div>
